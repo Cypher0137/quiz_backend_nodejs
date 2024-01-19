@@ -2,6 +2,7 @@
 // const axios = require('axios');
 // const path = require('path');
 
+
 // const app = express();
 // const port = process.env.PORT || 3001;
 
@@ -42,7 +43,7 @@ const port = process.env.PORT || 3001;
 
 // Use the cors middleware
 app.use(cors());
-
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Fetching questions from the API
